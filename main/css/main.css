@@ -82,8 +82,20 @@ body {
   color: gray;
 }
 
-h1, h2, h3 {
+h1 {
   color: black;
+  font-size: xx-large;
+}
+
+h2 {
+  color: black;
+  font-size: x-large;
+}
+
+h3 {
+  color: var(--color-blue);
+  font-family: var(--font-sans);
+  font-size: x-large;
 }
 
 .typography {
@@ -245,31 +257,38 @@ h1, h2, h3 {
   grid-column: 4 / 5;
 }
 
+.molecules {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-column-gap: 100px;
+}
+
 .promo {
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr;
-background-image: url("https://fcnl-production.s3.amazonaws.com/resource_grids/1/shareable_image/large.jpg?1600373832");
-height: 424px;
-width: 552px;
-padding-left: 20px;
-padding-right: 20px;
-padding-bottom: 0;
-border-radius: 2px;
-font-size: 200%;
-font: var(--font-serif);
-background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-image: url("https://fcnl-production.s3.amazonaws.com/resource_grids/1/shareable_image/large.jpg?1600373832");
+  height: 424px;
+  width: 552px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  border-radius: 2px;
+  font-size: 200%;
+  font: var(--font-serif);
+  background-size: cover;
 }
 
 .promo__text {
-grid-row-start: 3;
-grid-row-end: 4;
-grid-column-start: 1;
-grid-column-end: -1;
-font-size: x-large;
-font-family: var(--font-serif);
-align-items: end;
-position: relative;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  font-size: x-large;
+  font-family: var(--font-serif);
+  align-items: end;
+  position: relative;
 }
 
 .promo__text > p {
@@ -298,4 +317,17 @@ position: relative;
   text-decoration: none;
   font-family: var(--font-sans);
   font-size: small;
+}
+
+.card--lobbyists {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-image: url(https://fcnl-production.s3.amazonaws.com/image/79/sixteen_nine_medium.jpg?1474653273);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  border-radius: 2px;
+  font-size: 200%;
+  font: var(--font-serif);
+  background-size: cover;
 }
