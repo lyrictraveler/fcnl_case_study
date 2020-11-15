@@ -40,6 +40,12 @@ margin: 54px 0px 36px 0px;
 
 html {
   box-sizing: border-box;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-blue-light: #2385D7;
+  --color-blue: #113772;
+  --font-serif: 'calendas_plusregular';
+  --font-sans: Roboto;
 }
 *,
 *:before,
@@ -47,15 +53,31 @@ html {
   box-sizing: inherit;
 }
 
+/** 
+
+  
+body {
+  box-sizing: border-box;
+  font-family: var(--font-serif);
+  line-height: 1.5;
+  max-width: 40rem;
+  margin: auto;
+  padding: 2rem;
+  color: white;
+}
+**/
+
 /**img {
   max-width: 100%;
 }**/
 
 body {
   /*box-sizing: border-box;*/
-  font-family: 'calendas_plusregular';
+  font-family: var(--font-serif);
+  line-height: 1.5;
   font-size: 14px;
   max-width: 40rem;
+  margin: auto;
   padding: 2rem;
   color: gray;
 }
@@ -223,3 +245,57 @@ h1, h2, h3 {
   grid-column: 4 / 5;
 }
 
+.promo {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+background-image: url("https://fcnl-production.s3.amazonaws.com/resource_grids/1/shareable_image/large.jpg?1600373832");
+height: 424px;
+width: 552px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 0;
+border-radius: 2px;
+font-size: 200%;
+font: var(--font-serif);
+background-size: cover;
+}
+
+.promo__text {
+grid-row-start: 3;
+grid-row-end: 4;
+grid-column-start: 1;
+grid-column-end: -1;
+font-size: x-large;
+font-family: var(--font-serif);
+align-items: end;
+position: relative;
+}
+
+.promo__text > p {
+  color: white;
+  margin: 54px 0px 36px 0px;
+}
+
+.promo button {
+  display: block;
+  color: white;
+  background: #2486d8;
+  font-family: Roboto;
+  font-weight: medium;
+  font-size: small;
+  line-height: .9rem;
+  padding: 20px;
+  border: 0;
+  border-radius: 3px 3px 0px 0px;
+  cursor: pointer;
+  position: absolute;
+  bottom: -30px;
+}
+
+.promo a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: small;
+}
