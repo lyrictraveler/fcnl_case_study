@@ -1,0 +1,225 @@
+/**button {
+border: none;
+position: absolute;
+bottom: -30px;
+}
+.promo {
+display: grid;
+background-image: url("https://fcnl-production.s3.amazonaws.com/resource_grids/1/shareable_image/large.jpg?1600373832");
+*height: 400px;
+width: 490px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 0;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+font-size: 200%;
+font: var(--font-serif);
+background-size: cover;
+}
+.promo__text {
+grid-row-start: 3;
+grid-row-end: 4;
+grid-column-start: 1;
+grid-column-end: -1;
+font-size: x-large;
+font-family: var(--font-serif);
+align-items: end;
+position: relative;
+}
+.promo__text > p {
+margin: 54px 0px 36px 0px;
+}**/
+
+@font-face {
+    font-family: 'calendas_plusregular';
+    src: url('../fonts/calendas_plus.woff2') format('woff2'),
+         url('../fonts/calendas_plus.woff') format('woff');
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/**img {
+  max-width: 100%;
+}**/
+
+body {
+  /*box-sizing: border-box;*/
+  font-family: 'calendas_plusregular';
+  font-size: 14px;
+  max-width: 40rem;
+  padding: 2rem;
+  color: gray;
+}
+
+h1, h2, h3 {
+  color: black;
+}
+
+.typography {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+}
+
+.fcnl {  
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  background: white;
+  color: #213A70;
+  list-style-type: none;
+}
+
+.fcnl li:nth-child(1){
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+}
+
+.fcnl li:nth-child(2) {
+  font-family: Georgia;
+  font-size: 48px;
+  font-weight: thin;
+}
+
+.fcnl li:nth-child(3){
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  font-family: Georgia;
+  font-size: 24px;
+  font-weight: thin;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.body__text--large > p{
+    font-size: 28px;
+    line-height: 150%;
+    font-weight: normal;
+    width: 410px;
+    color: #999;
+}
+
+.body__text--small > p{
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: normal;
+  width: 300px;
+  color: #999;
+}
+
+.hero__title > p{
+  background: #113772;
+  padding: 10px 15px 10px 15px;
+  font-size: 58px;
+  color: white;
+}
+
+.hero__subtitle > p{
+  background: 	#213a70;
+  font-family: Roboto;
+  font-weight: medium;
+  line-height: 125%;
+  font-size: 28px;
+  color: white;
+}
+
+.text__links--featured > p{
+  font-size: 30px;
+  font-weight: medium;
+  line-height: 125%;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.text__links--featured  a{
+  font-family: Roboto;
+  text-decoration: none;
+  color: gray;
+  cursor: pointer;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-column-gap: 100px;
+}
+
+.button--outlined {
+  display: block;
+  background: white;
+  color: #7DB8F2;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: medium;
+  text-transform: uppercase;
+  padding: 4px 60px;
+  border-radius: 4px;
+  border: 2px solid	#7DB8F2;
+  margin: 0;
+  cursor: pointer;
+}
+
+.button--solidblue {
+  display: block;
+  color: white;
+  background: #2486d8;
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: medium;
+  line-height: .9rem;
+  padding: 0px 60px;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+}
+
+.button--gradient {
+  display: block;
+  background-image: linear-gradient(to bottom right, #2486d8,	#00a3a7);
+  color: white;
+  font-family: Arial;
+  font-size: 25px;
+  font-weight: medium;
+  line-height: .9rem;
+  text-transform: uppercase;
+  padding: 0px 64px;
+  border: 0;
+  cursor: pointer;
+}
+
+.button--search {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+  background: #f0f0f0;
+  font-family: Roboto;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-style: italic;
+  color: black;
+  line-height: .9rem;
+  border: 0;
+  cursor: pointer;
+  list-style-type: none;
+  padding: 20px;
+}
+
+.button--search li:nth-child(2){
+  grid-row: 1 / 2;
+  grid-column: 4 / 5;
+}
+
