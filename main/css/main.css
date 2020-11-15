@@ -1,36 +1,3 @@
-/**button {
-border: none;
-position: absolute;
-bottom: -30px;
-}
-.promo {
-display: grid;
-background-image: url("https://fcnl-production.s3.amazonaws.com/resource_grids/1/shareable_image/large.jpg?1600373832");
-*height: 400px;
-width: 490px;
-padding-left: 20px;
-padding-right: 20px;
-padding-bottom: 0;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr;
-font-size: 200%;
-font: var(--font-serif);
-background-size: cover;
-}
-.promo__text {
-grid-row-start: 3;
-grid-row-end: 4;
-grid-column-start: 1;
-grid-column-end: -1;
-font-size: x-large;
-font-family: var(--font-serif);
-align-items: end;
-position: relative;
-}
-.promo__text > p {
-margin: 54px 0px 36px 0px;
-}**/
-
 @font-face {
     font-family: 'calendas_plusregular';
     src: url('../fonts/calendas_plus.woff2') format('woff2'),
@@ -44,6 +11,7 @@ html {
   --color-white: #fff;
   --color-blue-light: #2385D7;
   --color-blue: #113772;
+  --color-gray: #666;
   --font-serif: 'calendas_plusregular';
   --font-sans: Roboto;
 }
@@ -142,7 +110,7 @@ h3 {
     line-height: 150%;
     font-weight: normal;
     width: 410px;
-    color: #999;
+    color: #666;
 }
 
 .body__text--small > p{
@@ -269,8 +237,8 @@ h3 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   background-image: url("https://fcnl-production.s3.amazonaws.com/resource_grids/1/shareable_image/large.jpg?1600373832");
-  height: 424px;
-  width: 552px;
+  height: 351px;
+  width: 509px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 0;
@@ -280,12 +248,18 @@ h3 {
   background-size: cover;
 }
 
+.promo img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%
+}
+
 .promo__text {
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: -1;
-  font-size: x-large;
+  font-size: 1.3rem;
   font-family: var(--font-serif);
   align-items: end;
   position: relative;
@@ -302,9 +276,9 @@ h3 {
   background: #2486d8;
   font-family: Roboto;
   font-weight: medium;
-  font-size: small;
+  font-size: .7rem;
   line-height: .9rem;
-  padding: 20px;
+  padding: 15px;
   border: 0;
   border-radius: 3px 3px 0px 0px;
   cursor: pointer;
@@ -319,15 +293,71 @@ h3 {
   font-size: small;
 }
 
+/**
+.card {
+border: .25rem double var(--color-black);
+padding: 1rem;
+text-align: center;
+border-radius: .5rem;
+max-width: 22rem;
+background: var(--color-white);
+margin: 1rem 0;
+}
+.card__list {
+padding: 0;
+list-style-type: none;
+}
+.card__title {
+font-size: 1.5rem;
+font-weight: normal;
+}
+.card__subtitle {
+    color: var(--color-red);
+    font-weight: bold;
+
+}
+**/
+
 .card--lobbyists {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  background-image: url(https://fcnl-production.s3.amazonaws.com/image/79/sixteen_nine_medium.jpg?1474653273);
-  padding-left: 20px;
-  padding-right: 20px;
+  border: 1px solid #ccc;
+  height: 692px;
+  width: 482px;
   padding-bottom: 0;
-  border-radius: 2px;
+  border-radius: 5px;
   font-size: 200%;
   font: var(--font-serif);
-  background-size: cover;
+}
+
+.card--lobbyists img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  padding-bottom: 75px;
+}
+
+.card--lobbyists h1 {
+  font-weight: lighter;
+  font-size: 44px;
+  color: #213A70;
+  line-height: .8rem;
+  text-align: center;
+}
+
+.card--lobbyists > p{
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: normal;
+  padding: 0px 60px 0px 60px;
+  color: #999;
+  text-align: center;
+}
+
+.card__link > a{
+  display: block;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 22px;
+  color: var(--color-blue-light);
+  text-align: center;
+  text-decoration: none;
 }
