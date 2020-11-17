@@ -11,6 +11,7 @@ html {
   --color-white: #fff;
   --color-blue-light: #2385D7;
   --color-blue: #113772;
+  --color-seagreen: #01A3A7;
   --color-gray: #666;
   --font-serif: 'calendas_plusregular';
   --font-sans: Roboto;
@@ -155,7 +156,7 @@ h3 {
 
 .buttons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 2fr 1fr;
   grid-column-gap: 100px;
 }
@@ -185,6 +186,21 @@ h3 {
   line-height: .9rem;
   padding: 0px 60px;
   border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+}
+
+.button--seagreen {
+  display: block;
+  color: white;
+  background: var(--color-seagreen);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: .7rem;
+  text-transform: uppercase;
+  padding: 0px 20px;
+  border-radius: 0px 0px 8px 8px;
   border: 0;
   cursor: pointer;
 }
@@ -280,7 +296,7 @@ h3 {
   line-height: .9rem;
   padding: 15px;
   border: 0;
-  border-radius: 3px 3px 0px 0px;
+  border-radius: 4px 4px 0px 0px;
   cursor: pointer;
   position: absolute;
   bottom: -30px;
@@ -361,3 +377,12 @@ font-weight: normal;
   text-align: center;
   text-decoration: none;
 }
+
+.box--update {
+  border: 1px solid #ccc;
+  padding-bottom: 0;
+  border-radius: 5px;
+  font-size: 200%;
+  font: var(--font-serif);
+}
+
