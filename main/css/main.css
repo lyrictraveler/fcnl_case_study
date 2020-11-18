@@ -241,10 +241,9 @@ h3 {
   grid-column: 4 / 5;
 }
 
-.molecules {
+.molecules--small {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
   grid-column-gap: 75px;
   margin: 20px;
 }
@@ -416,6 +415,8 @@ h3 {
   font-weight: normal;
   width: 410px;
   color: #666;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .box--update li:nth-child(3) p{
@@ -430,7 +431,6 @@ h3 {
   font-family: Roboto;
   font-size: larger;
   line-height: .8rem;
-  padding-bottom: 10px;
 }
 
 .box--update li:nth-child(4) a{
