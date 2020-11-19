@@ -497,8 +497,9 @@ h3 {
   font-size: 30px;
   background: #113772;
   color: white;
-  padding-right: 100px;
-
+  padding-right: 60px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .hero__contents li:nth-child(3){
