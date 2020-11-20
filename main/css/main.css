@@ -722,19 +722,13 @@ h3 {
 }
 
 .nav-bar {
-  background: var(--gray-light);
+  /*background: var(--gray-light);*/
 }
 
 .nav-bar .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-
-.site-name {
-  font-family: var(--font-cursive);
-  font-size: 1.5rem;
 }
 
 .nav-list {
