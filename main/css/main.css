@@ -47,7 +47,7 @@ body {
   line-height: 1.5;
   font-size: 14px;
   max-width: 40rem;
-  margin: auto;
+  margin: 0 0;
   padding: 2rem;
   color: gray;
 }
@@ -359,9 +359,9 @@ h3 {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 40px 1fr 1fr 1fr auto;
   grid-column-gap: 10px;
-  grid-row-gap: 0px
+  grid-row-gap: 0px;
   font-size: 200%;
-  font: var(--font-serif);
+  font-family: var(--font-serif);
   list-style-type: none;
   padding-left: 18px;
   padding-top: 0px;
@@ -369,6 +369,7 @@ h3 {
   padding-bottom: 0px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-shadow: 5px #e6e6e6;
 }
 
 .box--update .button--seagreen{
@@ -426,16 +427,19 @@ h3 {
 }
 
 .box--update li:nth-child(4){
+  border: 2px solid green;
   grid-row: 5 / 6;
   grid-column: 1 / 2;
   font-family: Roboto;
-  font-size: larger;
-  line-height: .8rem;
+  font-size: .8rem;
+  line-height: .5rem;
+  color: ccc;
 }
 
 .box--update li:nth-child(4) a{
   text-decoration: none;
   color: #4085d1;
+  font-weight: bold;
 }
 
 .box--update li:nth-child(5){
@@ -449,7 +453,7 @@ h3 {
 
 .molecules--large {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .hero__contents {
@@ -574,24 +578,44 @@ h3 {
   border: 2px solid red;
   grid-column: 1 / 2;
   grid-row: 2 / 4;
+  background: #0a2754;
+  color: white;
 }  
+
+.events__contents li:nth-child(1) h3{
+  background: #0a2754;
+  color: white;
+}
+
+.events__contents li:nth-child(1) p{
+  background: #0a2754;
+  color: white;
+}
+
+
+
 .events__contents li:nth-child(2){
-  border: 2px solid orange;
+  border: 5px solid orange;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 } 
 .events__contents li:nth-child(3){
-  border: 2px solid black;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-} 
-.events__contents li:nth-child(4){
-  border: 2px solid yellowgreen;
+  border: 5px solid magenta;
   grid-column: 2 / 3;
   grid-row: 3 / 4;
 } 
+.events__contents li:nth-child(4){
+  border: 5px solid yellowgreen;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+} 
 .events__contents li:nth-child(5){
-  border: 2px solid purple;
+  border: 5px solid purple;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+} 
+.events__contents li:nth-child(6){
+  border: 5px solid turquoise;
   grid-column: 2 / 3;
   grid-row: 4 / 5;
 } 
