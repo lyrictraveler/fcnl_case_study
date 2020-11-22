@@ -814,6 +814,7 @@ h3 {
 
 .footera li {
   list-style-type: none;
+  
 }
 
 .footera h3 {
@@ -837,26 +838,25 @@ h3 {
 }
 
 .reCAPTCHA {
-  border: 2px solid magenta;
   font-family: var(--font-sans);
   font-size: normal;
   color: white;
 }
 
-/**.footera .button--outlined {
+.footera .button--outlined {
   display: block;
-  background: #fff;
+  background: #213a70;
   color: #7DB8F2;
   font-family: Roboto;
   font-size: 14px;
   font-weight: medium;
   text-transform: uppercase;
-  padding: 15px 60px;
+  padding: 15px 30px;
   border-radius: 4px;
   border: 2px solid	#7DB8F2;
-  margin: 0;
+  margin: 15px;
   cursor: pointer;
-}**/
+}
 
 .footera li:nth-child(1) {
   grid-template-columns: 2 / 3;
