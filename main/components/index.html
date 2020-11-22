@@ -12,135 +12,157 @@
     <script src="https://kit.fontawesome.com/a1e57ac401.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Web Components for FCNL Study: fcnl.org</h1>
-    <h2>Typography Defaults</h2>
+    <div id="wrapper">
+    <h1>Web Components for FCNL Study</h1>
+        <ul class="header__nav-list">
+            <li><a href="#typo" class="hvr-grow">Typography Defaults</a></li>
+            <li><a href="#buttons" class="hvr-grow">Buttons</a></li>
+            <li><a href="#small" class="hvr-grow">Small Molecules</a></li>
+            <li><a href="#large" class="hvr-grow">Large Molecules</a></li>
+            <li><a href="#isms" class="hvr-grow">Organisms</a></li>
+        </ul>
+    <h2 id="typo" class="defaults">Typography Defaults</h2>
     <div class="typography">
         <article class="wordmark">
             <h3>Wordmark</h3>
-            <img
-            srcset="main/components/img/wordmark@2x.png 2x"
-            src="main/components/img/wordmark@2x.png"
+            <img class="component__img"
+            srcset="img/wordmark@2x.png 2x"
+            src="img/wordmark@2x.png"
             alt="wordmark" 
             />
+            <div class="component__code">
             <ul class="fcnl">
                 <li><img src="https://images.app.goo.gl/d9UT5moYPzB2gJsEA" alt="logo" />
                 </li>
                 <li>Friends Committee</li>
                 <li>On National Legislation</li>
             </ul>
+            </div>
         </article>
         <article class="hero__title">
             <h3>Hero Title</h3>
-            <img
-            srcset="/img/hero__title@2x.png 2x"
-            src="/img/hero__title@2x.png"
+            <img class="component__img"
+            srcset="img/hero__title@2x.png 2x"
+            src="img/hero__title@2x.png"
             alt="hero title" 
             />
-            <p>Count Every Vote</p>
+            <p class="component__code">Count Every Vote</p>
         </article> <!--end hero title article-->
         <article class="hero__subtitle">
             <h3>Hero Subtitle</h3>
-            <img
-            srcset="../img/hero__subtitle@2x.png 2x"
-            src="../img/hero__subtitle@2x.png"
+            <img class="component__img"
+            srcset="img/hero__subtitle@2x.png 2x"
+            src="img/hero__subtitle@2x.png"
             alt="hero subtitle" 
             />
-            <p>Working for change today requires a ferocity and tenacity that colors the idea of love with the full range of its meanings. It is not passive, not necessarily nice or pretty. It is fierce.</p>
+            <p class="component__code">Working for change today requires a ferocity and tenacity that colors the idea of love with the full range of its meanings. It is not passive, not necessarily nice or pretty. It is fierce.</p>
+
         </article> <!--end hero subtitle article-->
         <article class="body__text--large">
             <h3>Body Text - Large</h3>
-            <img
-            srcset="../img/body__text-var1@2x.png 2x"
-            src="../img/body__text-var1@2x.png"
+            <img class="component__img"
+            srcset="img/body__text-var1@2x.png 2x"
+            src="img/body__text-var1@2x.png"
             alt="body text var1" 
             />
-            <p>We, the people, have spoken. It is clear that Joe Biden, even with final votes still being counted, has won a majority of the popular vote and over 270 electoral votes, securing his election as our 46th president.</p>
+            <p class="component__code">We, the people, have spoken. It is clear that Joe Biden, even with final votes still being counted, has won a majority of the popular vote and over 270 electoral votes, securing his election as our 46th president.</p>
         </article> <!--end body__text--large article-->
         <article class="body__text--small">
             <h3>Body Text - Small</h3>
-            <img
-            srcset="../img/body__text--small@2x.png 2x"
-            src="../img/body__text--small@2x.png"
+            <img class="component__img"
+            srcset="img/body__text--small@2x.png 2x"
+            src="img/body__text--small@2x.png"
             alt="body text small" 
             />
-            <p>Join us on Nov. 13 for the Annual Advocacy Teams Summit – this year held virtually! We will look at the incredible work we have accomplished together, build our community, and plan for an impactful 2021 after what is sure to be a consequential election year.</p>
+            <p class="component__code">Join us on Nov. 13 for the Annual Advocacy Teams Summit – this year held virtually! We will look at the incredible work we have accomplished together, build our community, and plan for an impactful 2021 after what is sure to be a consequential election year.</p>
         </article> <!--end body__text--small article-->
         <article class="text__links--featured">
             <h3>Featured Text Links</h3>
-            <img
-            srcset="../img/large-link2@2x.png 2x"
-            src="../img/large-link2@2x.png"
+            <img class="component__img"
+            srcset="img/large-link2@2x.png 2x"
+            src="img/large-link2@2x.png"
             alt="large link" 
             />
             <h3>in various colors</h3>
-            <p><a href="!#">Thursdays with Friends <i class="fas fa-angle-right"></i></a></p>
+            <p class="component__code"><a href="!#">Thursdays with Friends <i class="fas fa-angle-right"></i></a></p>
         </article> <!--end text links article-->
     </div><!--end typography div-->
-    <h2>Buttons</h2>
+    <h2 id="buttons" class="defaults">Buttons</h2>
     <div class="buttons">
         <article>
             <h3>Outlined Button</h3>
-            <img
-            srcset="../img/button--news@2x.png 2x"
-            src="../img/button--news@2x.png"
+            <img class="component__img"
+            srcset="img/button--news@2x.png 2x"
+            src="img/button--news@2x.png"
             alt="outlined button" />
+            <div class="component__code">
             <button class="button--outlined">
             All News
             </button>
+            </div>
         </article>
         <article>
             <h3>Solid Blue Button</h3>
-            <img
-            srcset="../img/button--solidblue@2x.png 2x"
-            src="../img/button--solidblue@2x.png"
+            <img class="component__img"
+            srcset="img/button--solidblue@2x.png 2x"
+            src="img/button--solidblue@2x.png"
             alt="blue button" />
+            <div class="component__code">
             <button class="button--solidblue">
             More
             </button>
+            </div>
         </article>
         <article>
             <h3>Seagreen Button</h3>
-            <img
-            srcset="../img/button--seagreen@2x.png 2x"
-            src="../img/button--seagreen@2x.png"
+            <img class="component__img"
+            srcset="img/button--seagreen@2x.png 2x"
+            src="img/button--seagreen@2x.png"
             alt="seagreen button" />
+            <div class="component__code">
             <button class="button--seagreen">
             update
             </button>
+            </div>
         </article>
         <article>
             <h3>Gradient Button</h3>
-            <img
-            srcset="../img/button--donate@2x.png 2x"
-            src="../img/button--donate@2x.png"
+            <img class="component__img"
+            srcset="img/button--donate@2x.png 2x"
+            src="img/button--donate@2x.png"
             alt="gradient button" />
+            <div class="component__code">
             <button class="button--gradient">
             donate <i class="fas fa-arrow-right"></i>
             </button>
+            </div>
         </article>
         <article>
             <h3>Search Button</h3>
-            <img
-            srcset="../img/button--search@2x.png 2x"
-            src="../img/button--search@2x.png"
+            <img class="component__img"
+            srcset="img/button--search@2x.png 2x"
+            src="img/button--search@2x.png"
             alt="gradient button" 
             />
+            <div class="component__code">
             <ul class="button--search">
                 <li>search</li> 
                 <li><i class="fa fa-search" aria-hidden="true"></i></li>
             </ul>
+            </div>
         </article>
     </div><!--end buttons div-->
-    <h2>Small Molecules</h2>
+    <h2 id="small" class="defaults">Small Molecules</h2>
         <div class="molecules--small">
         <article>
         <h3>Promo Molecule</h3>
-            <img
-            srcset="../img/promo--shareable@2x.png 2x"
-            src="../img/promo--shareable@2x.png"
+            <img class="component__img"
+            srcset="img/promo--shareable@2x.png 2x"
+            src="img/promo--shareable@2x.png"
             alt="promo" 
             />
             <p>The source image has changed!</p>
+            <div class="component__code">
             <figure class="promo">
                 <div class="promo__text">
                 <p>Learn to Virtually Lobby in 30 Minutes
@@ -148,15 +170,17 @@
                 <button class="share">SHARE &emsp; <i class="fab fa-twitter"></i></button>
                 </div>
             </figure>
+            </div>
         </article>
         <article>
             <h3>Card Molecule</h3>
-            <img
-            srcset="../img/card--lobbyists@2x.png 2x"
-            src="../img/card--lobbyists@2x.png"
+            <img class="component__img"
+            srcset="img/card--lobbyists@2x.png 2x"
+            src="img/card--lobbyists@2x.png"
             alt="lobbyists card" 
             />
-            <div class="card--who">
+            <div class="component__code">
+                <div class="card--who">
                 <img src="https://fcnl-production.s3.amazonaws.com/image/79/sixteen_nine_medium.jpg?1474653273" alt="lobbyists" 
                 />
                 <h1>Lobbyists</h1>
@@ -165,14 +189,17 @@
                 <a href="!#">More about our work on the Hill <i class="fas fa-angle-right"></i></a>
                 </p>
             </div><!--end div "card-lobbyists"-->
+            </div>
         </article>
         <article>
             <h3>Update Molecule</h3>
-            <img
-            srcset="../img/box--statement@2x.png 2x"
-            src="../img/box--statement@2x.png"
+            <img class="component__img"
+            srcset="img/box--statement@2x.png 2x"
+            src="img/box--statement@2x.png"
             alt="update box" 
             />
+            <div class="component__code">
+
             <ul class="box--update">
                 <li><button class="button--seagreen">Statement</button></li>
                 <li><h2><a href="!#">The People Have Spoken <i class="fa fa-angle-right" aria-hidden="true"></i></a></h2></li>
@@ -187,17 +214,20 @@
                     />
                 </li>
             </ul><!--end box--update-->
+            </div>
         </article>
        </div><!--end molecules--small div-->
-       <h2>Large Molecules</h2>
+       <h2 id="large" class="defaults">Large Molecules</h2>
        <div class="molecules--large">
         <article class="banner--hero">
             <h3>Hero Banner Molecule</h3>
-            <img
-            srcset="../img/banner--hero@2x.png 2x"
-            src="main/img/banner--hero@2x.png"
+            <img class="component__img"
+            srcset="img/banner--hero@2x.png 2x"
+            src="img/banner--hero@2x.png"
             alt="hero banner"
             />
+            <div class="component__code">
+
                 <ul class="hero__contents">
                     <li><h2>Count Every Vote</h2></li>
                     <li><p>We are in expectant waiting for the final results of the elections &mdash; results that could take many days. It is essential we count every vote and that we stay committed to a democracy that serves all its people.</p>
@@ -208,14 +238,17 @@
                         <a href="!#">More about us&ensp;<i class="fas fa-angle-right"></i></a>
                     </li>
                 </ul><!--end hero div-->
+            </div>
         </article>
         <article class="banner--events">
             <h3>Event Banner Molecule</h3>
-            <img
-            srcset="../img/banner--events@2x.png 2x"
-            src="main/img/banner--events@2x.png"
+            <img class="component__img"
+            srcset="img/banner--events@2x.png 2x"
+            src="img/banner--events@2x.png"
             alt="hero banner"
             />
+            <div class="component__code">
+
                 <ul class="events__contents">
                     <li><h3>FCNL Events</h3>
                         <p>Join a community of friends in events around the country.</p>
@@ -234,22 +267,25 @@
                         <p>Bi-weekly Virtual Conversation</p>
                     </li>
                 </ul><!--end events list-->
+            </div>
         </article>
         </div> <!--end large molecules-->
         <div class="organisms">
-            <h2>Organisms</h2>
+            <h2 id="isms" class="defaults">Organisms</h2>
         <article class="FCNL__site-header">
             <h3>Header Organism</h3>
-            <img
-            srcset="../img/header@2x.png 2x"
-            src="main/img/header@2x.png"
+            <img class="component__img"
+            srcset="img/header@2x.png 2x"
+            src="img/header@2x.png"
             alt="header"
             />
+            <div class="component__code">
+
             <section class="nav-bar">
                 <div class="container">
                     <img class="site-name"
-                    srcset="../img/wordmark@2x.png 2x"
-                    src="../img/wordmark@2x.png"
+                    srcset="img/wordmark@2x.png 2x"
+                    src="img/wordmark@2x.png"
                     alt="FCNL logo" 
                     />
                     <nav>
@@ -277,14 +313,17 @@
                     </nav>
                 </div>
             </section>
+        </div>
         </article>
         <article class="about">
             <h3>About Us Organism</h3>
-            <img
-            srcset="../img/about--new@2x.png 2x"
-            src="main/img/about--new@2x.png"
+            <img class="component__img"
+            srcset="img/about--new@2x.png 2x"
+            src="img/about--new@2x.png"
             alt="updates"
             />
+            <div class="component__code">
+
             <section class="container--about">
                 <h2>Who is FCNL?</h2>
                 <ul class="about__list">
@@ -317,17 +356,19 @@
                     </li><!--end div "card-quakers"-->
                 </ul>
             </section>
-
+        </div>
         </article>
 
         <article class="footer__a">
             <h3>Footer A Organism</h3>
-            <img
-            srcset="../img/footer_a@2x.png 2x"
-            src="main/img/footer_a@2x.png"
+            <img class="component__img"
+            srcset="img/footer_a@2x.png 2x"
+            src="img/footer_a@2x.png"
             alt="header"
             />
-                <ul class="footera">
+            <div class="component__code">
+
+                <ul class="calls">
                     <li>
                         <h3>Attend an Event</h3>
                         <p>FCNL events happen over the country.</p>
@@ -347,33 +388,67 @@
                     <li>
                         <h3>Follow Us</h3>
                         <p>Stay connected with our work on social media.</p>
-                        <ul class="social-media flat-list">
-                            <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#!"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
-                          </ul>
+                        <p class="social-media">
+                            <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#!"><i class="fab fa-twitter"></i></a>
+                            <a href="#!"><i class="fab fa-youtube"></i></a>
+                            <a href="#!"><i class="fab fa-instagram"></i></a>
+                        </p>
                     </li>
                 </ul>
+            </div>
         </article>
         <article class="footer_b">
             <h3>Footer B Organism</h3>
-            <img
-            srcset="../img/footerb_full@2x.png 2x"
-            src="../img/footer_bfull@2x.png"
+            <img class="component__img"
+            srcset="img/footerb_full@2x.png 2x"
+            src="img/footer_bfull@2x.png"
             alt="header"
             />
+            <div class="component__code">
+                <section class="footerb">
+                   <li><img  
+                    src="main/img/fcnl_badge@2x.png 2x"
+                   srcset="main/img/fcnl_badge@2x.png 2x"
+                   alt="transparency badge"
+                   </li>
+                   <li><h6>FCNL has moved to telework!</h6>
+                    <p>The FCNL offices are temporarily closed due to the coronavirus pandemic. We are lobbying online and by phone for the world we seek. Your engagement with Congress at this time is essential! Join us and become a <a href="!#">monthly donor.</a></p>
+                <li>
+                    <ul>
+                        <li>My Account</li>
+                        <li>Contact Us</li>
+                        <li>Press Room</li>
+                        <li>Internet Privacy Policy</li>
+                        <li>Donor Privacy Policy</li>
+                        <li>Work with FCNL</li>
+                    </ul>
+                </li>
+                <li>245 Second St, NE, Washington, DC 20002 202-547-6000 800-630-1330 (Toll Free)
+                    <p>(c)2020</p>
+                </li>
+                <li>
+                    <img 
+                    srcset="../img/olive-branch@2x.png @2x"
+                    src="../img/olive-branch@2x.png"
+                    alt="olive branch"
+                    />
+                </li>
+                </section>
+            </div>
 
             
         </article>
 
         <article class="Updates">
             <h3>Updates Organism</h3>
-            <img
-            srcset="../img/grid--updates@2x.png 2x"
-            src="main/img/grid--updates@2x.png"
+            <img class="component__img"
+            srcset="img/grid--updates@2x.png 2x"
+            src="img/grid--updates@2x.png"
             alt="header"
             />
+            <div class="component__code">
+
             <h2>Updates & Resources</h2>
             <div class="news">
                 <section class="row1">
@@ -394,9 +469,9 @@
                 </section>
 
             </div>
-
+        </div>
         </article>
        </div><!--end organisms--large-->
-
+       </div><!--wrapper ends here-->
 </body>
 </html>
