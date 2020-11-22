@@ -814,7 +814,7 @@ h3 {
 
 .footera li {
   list-style-type: none;
-  
+
 }
 
 .footera h3 {
@@ -840,7 +840,9 @@ h3 {
 .reCAPTCHA {
   font-family: var(--font-sans);
   font-size: normal;
-  color: white;
+  color: #8E9DB7;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .footera .button--outlined {
