@@ -95,7 +95,7 @@ h3 {
 .fcnl li:nth-child(2) {
   font-family: Georgia;
   font-size: 48px;
-  font-weight: thin;
+  font-weight: lighter;
 }
 
 .fcnl li:nth-child(3){
@@ -103,7 +103,7 @@ h3 {
   grid-column: 2 / 3;
   font-family: Georgia;
   font-size: 24px;
-  font-weight: thin;
+  font-weight: lighter;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -165,7 +165,7 @@ h3 {
 
 .button--outlined {
   display: block;
-  background: white;
+  background: #fff;
   color: #7DB8F2;
   font-family: Roboto;
   font-size: 14px;
@@ -347,7 +347,6 @@ h3 {
 }
 
 .card__link > a{
-  border: 2x solid green;
   display: block;
   font-family: Roboto;
   font-weight: bold;
@@ -703,7 +702,7 @@ h3 {
 **/
 .organisms {
   display: grid;
-  grid-template-rows: .25fr 1fr 2fr 1fr;
+  grid-template-rows: 0.1 0.25fr 1fr 0.25fr 0.25fr 2fr;
 }
 
 .container {
@@ -785,7 +784,7 @@ h3 {
   font-family: Arial;
   font-size: 25px;
   font-weight: medium;
-  line-height: 3.5rem;
+  line-height: 2rem;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -804,6 +803,77 @@ h3 {
 
 .nav-list a{
   text-decoration: none;
+}
+
+.footera {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  background: #213a70;
+}
+
+.footera li {
+  list-style-type: none;
+}
+
+.footera h3 {
+  font-family: Roboto;
+  line-height: .5rem;
+  font-size: 28px;
+  font-weight: lighter;
+  color: white;
+  padding: 24px;
+  padding-bottom: 0px;
+}
+
+.footera p:not(.reCAPTCHA) {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  color: white;
+  padding-top: 0px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 0px;
+}
+
+.reCAPTCHA {
+  border: 2px solid magenta;
+  font-family: var(--font-sans);
+  font-size: normal;
+  color: white;
+}
+
+/**.footera .button--outlined {
+  display: block;
+  background: #fff;
+  color: #7DB8F2;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: medium;
+  text-transform: uppercase;
+  padding: 15px 60px;
+  border-radius: 4px;
+  border: 2px solid	#7DB8F2;
+  margin: 0;
+  cursor: pointer;
+}**/
+
+.footera li:nth-child(1) {
+  grid-template-columns: 2 / 3;
+  grid-template-rows: 1 / 2;
+}
+
+.footera li:nth-child(2) {
+  grid-template-columns: 3 / 4;
+}
+
+.footera li:nth-child(3) {
+  grid-template-columns: 4 / 5;
+}
+
+.footera li:nth-child(4) {
+  grid-template-columns: 5 / 6;
+  grid-template-rows: 1 / 2;
 }
 
 
