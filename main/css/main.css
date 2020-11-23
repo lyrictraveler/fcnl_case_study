@@ -999,7 +999,6 @@ h3 {
 }**/
 
 .container--about {
-  border: 5px solid hotpink;
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
   grid-template-rows: .3fr 2fr .5fr;
