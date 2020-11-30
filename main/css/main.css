@@ -505,10 +505,17 @@ h3 {
   display: grid;
   grid-template-columns: 600px 2fr 600px 1fr;
   grid-template-rows: 140px 350px 140px;
-  background: #113772;
+  background-image: url(https://fcnl-production.s3.amazonaws.com/image/1378/sixteen_nine_large.jpg?1583444981);
+  /**background: #113772;**/
+  background-repeat: no-repeat;
   color: white;
 }
 
+.hero__contents img {
+  width: 200%; 
+  height: 200%; 
+  object-fit: contain; 
+}
 
 .hero__contents li {
   list-style-type: none;
