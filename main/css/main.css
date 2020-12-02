@@ -673,7 +673,6 @@ h3 {
 } 
 
 .events__contents li:nth-child(2) h4{
-  border: 2px solid hotpink;
   color: white;
   font-family: Roboto;
   font-size: 18px;
@@ -682,7 +681,8 @@ h3 {
   text-transform: uppercase;
   padding-top: 60px;
   padding-bottom: 20px;
-  border-bottom: 5px red;
+  /*border-bottom doesn't show up after adding background image*/
+  /*border-bottom: 5px red;*/
   margin-left: 40px;
   margin-bottom: 20px;
 } 
@@ -1023,7 +1023,7 @@ h3 {
 .row1 {
   border: 2px solid purple;
   display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+  grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
   grid-gap: 40px;
 }
 
@@ -1035,14 +1035,14 @@ h3 {
 
 .row1 .update--randall {
   border: 2px solid red;
-  grid-column: 3 / 5;
+  grid-column: 3 / 4;
   grid-row: 1 / 2;
 }
 
 .update--gobbo {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 40px .4fr .5fr 1fr auto;
+  grid-template-rows: 40px 1fr 1.5fr 0.5fr;
   grid-column-gap: 10px;
   grid-row-gap: 0px;
   font-size: 200%;
@@ -1070,38 +1070,42 @@ h3 {
 }
 
 .update--gobbo li:nth-child(1){
+  border: 2px solid red;
   grid-row: 1 / 2;
   grid-column: 1 / 2;
 }
 
 .update--gobbo li:nth-child(2){
+  border: 2px solid orange;
   grid-row: 2 / 3;
   grid-column: 1 / 2;
   padding-right: 20px;
   padding-bottom: 0px;
   margin-bottom: 0px;
-  cursor: pointer;
 }
 
 .update--gobbo li:nth-child(2) a{
   font-family: Roboto;
   font-weight: lighter;
-  font-size: 38px;
   text-decoration: none;
   color: #4085d1;
   padding-bottom: 0px;
   margin-bottom: 0px;
+  cursor: pointer;
 }
 
 
 .update--gobbo li:nth-child(3){
+  border: 2px solid green;
   grid-row: 3 / 5;
   grid-column: 1 / 2;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 150%;
   font-weight: normal;
-  width: 410px;
-  color: #666;
+  width: 300px;
+  color: #999;
+  padding: 0px;
+  margin: 0px;
 }
 
 .update--gobbo li:nth-child(3) p{
@@ -1110,6 +1114,7 @@ h3 {
 }
 
 .update--gobbo li:nth-child(4){
+  border: 2px solid gold;
   grid-row: 5 / 6;
   grid-column: 1 / 2;
   font-family: Roboto;
@@ -1119,6 +1124,7 @@ h3 {
 }
 
 .update--gobbo li:nth-child(4) a{
+  border: 2px solid blue;
   text-decoration: none;
   color: #4085d1;
   font-weight: bold;
@@ -1126,12 +1132,11 @@ h3 {
 
 .update--gobbo li:nth-child(5){
   border: 2px solid hotpink;
-  grid-row-start: 4;
   grid-row-end: 6;
   grid-column: 2 / 3;
   padding: 0;
   margin: 0;
-  justify-self: baseline;
+  justify-self: end;
 }
 
 .update--randall {
@@ -1197,6 +1202,8 @@ h3 {
   font-weight: normal;
   width: 410px;
   color: #666;
+  padding: 0px;
+  margin: 0px;
 }
 
 .update--randall li:nth-child(3) p{
