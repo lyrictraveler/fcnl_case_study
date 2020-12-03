@@ -1024,7 +1024,7 @@ h3 {
 .row1 {
   border: 2px solid purple;
   display: grid;
-  grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
+  grid-template-columns: 200px 400px 650px 0.5fr;
   grid-gap: 40px;
 }
 
@@ -1032,6 +1032,7 @@ h3 {
   border: 2px solid green;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  padding-left: 0px;
 }
 
 .row1 .update--randall {
@@ -1049,10 +1050,6 @@ h3 {
   font-size: 200%;
   font-family: var(--font-serif);
   list-style-type: none;
-  padding-left: 18px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 5px #e6e6e6;
@@ -1143,17 +1140,12 @@ h3 {
 
 .update--randall {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.5fr 0.5fr;
   grid-template-rows: 40px .4fr .5fr 1fr auto;
-  grid-column-gap: 10px;
   grid-row-gap: 0px;
   font-size: 200%;
   font-family: var(--font-serif);
   list-style-type: none;
-  padding-left: 18px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 5px #e6e6e6;
@@ -1166,12 +1158,6 @@ h3 {
   border-radius: 0px 0px 4px 4px;
 }
 
-/*.update--randall img {
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%
-}*/
-
 .update--randall li:nth-child(1){
   grid-row: 1 / 2;
   grid-column: 1 / 2;
@@ -1180,7 +1166,7 @@ h3 {
 .update--randall li:nth-child(2){
   grid-row: 2 / 3;
   grid-column: 1 / 2;
-  padding-right: 20px;
+  padding-right: 50px;
   padding-bottom: 0px;
   margin-bottom: 0px;
   cursor: pointer;
@@ -1249,25 +1235,34 @@ h3 {
 .row2 {
   border: 2px solid purple;
   display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-columns: 200px 525px 525px 1fr;
   grid-gap: 40px;
 }
 
-update--israel {
+.row2 .update--israel {
+  border: 2px solid green;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  padding-left: 0px;
+}
+
+.row2 .update--donation {
+  border: 2px solid red;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.update--israel {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   grid-template-rows: 40px 0.75fr 1fr 0.2fr;
   grid-column-gap: 10px;
   grid-row-gap: 0px;
   font-size: 200%;
   font-family: var(--font-serif);
   list-style-type: none;
-  padding-left: 18px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin: 0 0;
   box-shadow: 5px #e6e6e6;
   position: relative;
 }
@@ -1292,7 +1287,6 @@ update--israel {
   border: 2px solid orange;
   grid-row: 2 / 3;
   grid-column: 1 / 2;
-  padding-right: 20px;
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
@@ -1340,4 +1334,78 @@ update--israel {
   text-decoration: none;
   color: #4085d1;
   font-weight: bold;
+}
+
+.update--donation {
+  background: 
+  /* top, transparent navy, faked with gradient */ 
+    linear-gradient(
+      rgba(13, 44, 91, 0.90), 
+      rgba(13, 44, 91, 0.90)
+    ), 
+  /* bottom, image */
+    url(https://fcnl-production.s3.amazonaws.com/image/1378/sixteen_nine_large.jpg?1583444981);
+  background-size: cover;
+  color: white;
+  padding: 60px;
+  font-family: var(--font-cursive);
+  font-size: 28px;
+  text-align: center;
+}
+
+.update--donation h2 {
+  color: white;
+  font-family: var(--font-sans);
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.update--donation button {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: .8em;
+  padding: 20px;
+}
+
+.row3 {
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: 200px 650px 400px 1fr;
+  grid-gap: 40px;
+}
+
+.row3 .promo {
+  border: 2px solid green;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin-left: 0px;
+  margin-top: 30px;
+  background-size: cover;
+}
+
+.row3 .update--news {
+  grid-column: 3 / 4;
+}
+
+.row3 img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%
+}
+
+.update--news h4 {
+  border: hotpink;
+  font-family: Roboto;
+  font-size: .8rem;
+  line-height: .5rem;
+  color: ccc;
+}
+
+.update--news a{
+    display: block;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--color-blue);
+    text-decoration: none;
 }
