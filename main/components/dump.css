@@ -21,3 +21,9 @@ alt="FCNL logo"
 </ul>
 </section>
 -->
+
+.container {
+    max-width: 110rem;
+    margin: auto; /** to center item w/ width **/
+    padding: 0px, 1rem;
+  }
