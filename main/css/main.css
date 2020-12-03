@@ -179,7 +179,7 @@ h3 {
 .hero__subtitle > p{
   background: 	#213a70;
   font-family: Roboto;
-  font-weight: medium;
+
   line-height: 125%;
   font-size: 28px;
   color: white;
@@ -187,7 +187,7 @@ h3 {
 
 .text__links--featured > p{
   font-size: 30px;
-  font-weight: medium;
+  
   line-height: 125%;
   color: black;
   text-decoration: none;
@@ -214,7 +214,7 @@ h3 {
   color: #7DB8F2;
   font-family: Roboto;
   font-size: 14px;
-  font-weight: medium;
+ 
   text-transform: uppercase;
   padding: 15px 60px;
   border-radius: 4px;
@@ -229,7 +229,7 @@ h3 {
   background: #2486d8;
   font-family: Roboto;
   font-size: 35px;
-  font-weight: medium;
+  
   line-height: .9rem;
   padding: 40px 60px;
   border-radius: 8px;
@@ -258,7 +258,7 @@ h3 {
   color: white;
   font-family: Arial;
   font-size: 25px;
-  font-weight: medium;
+  
   line-height: .9rem;
   text-transform: uppercase;
   padding: 20px 64px;
@@ -338,7 +338,7 @@ h3 {
   color: white;
   background: #2486d8;
   font-family: Roboto;
-  font-weight: medium;
+  
   font-size: .7rem;
   line-height: .9rem;
   padding: 15px;
@@ -547,7 +547,7 @@ h3 {
 
 .hero__contents li:nth-child(2) p{
   font-family: Roboto;
-  font-weight: medium;
+ 
   line-height: 125%;
   font-size: 30px;
   color: white;
@@ -577,7 +577,7 @@ h3 {
 
 .hero__contents li:nth-child(3) p{
   font-family: var(--font-sans);
-  font-weight: medium;
+  
   line-height: 125%;
   font-size: 38px;
   color: white;
@@ -602,7 +602,7 @@ h3 {
   background: #2485d7;
   font-family: Roboto;
   font-size: 30px;
-  font-weight: medium;
+ 
   line-height: .9rem;
   padding: 30px 45px 30px 45px;
   border-radius: 8px;
@@ -741,13 +741,13 @@ h3 {
 
 .organisms {
   display: grid;
-  grid-template-rows: 0.1 0.25fr 1fr 0.25fr 0.25fr 2fr;
+  grid-template-rows: 0.1fr 0.25fr 1fr 0.25fr 0.25fr 2fr;
 }
 
 .container {
   max-width: 110rem;
   margin: auto; /* to center item w/ width */
-  padding: 0, 1rem;
+  padding: 0px, 1rem;
 }
 
 .site-name {
@@ -822,7 +822,7 @@ h3 {
   color: white;
   font-family: Arial;
   font-size: 25px;
-  font-weight: medium;
+
   line-height: 2rem;
   text-transform: uppercase;
   cursor: pointer;
@@ -891,7 +891,7 @@ h3 {
   color: var(--color-blue-light);
   font-family: Roboto;
   font-size: 14px;
-  font-weight: medium;
+
   text-transform: uppercase;
   padding: 15px;
   border-radius: 4px;
