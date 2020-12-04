@@ -1385,7 +1385,7 @@ h3 {
 
 .updates {
   margin-left: 0;
-  margin-right: auto;
+  margin-right: 0;
   width: 1200px;
   border: 2px #ccc;
 }
