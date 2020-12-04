@@ -27,3 +27,15 @@ alt="FCNL logo"
     margin: auto; /** to center item w/ width **/
     padding: 0px, 1rem;
   }
+
+  /*.row3 .promo {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin-left: 0px;
+  margin-top: 30px;
+  background-size: cover;
+}
+
+.row3 .update--news {
+  grid-column: 3 / 4;
+}*/
