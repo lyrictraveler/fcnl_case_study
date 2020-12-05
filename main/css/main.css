@@ -433,7 +433,6 @@ h3 {
   padding-bottom: 0px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 5px #e6e6e6;
   position: relative;
 }
 
@@ -495,7 +494,7 @@ h3 {
   font-family: Roboto;
   font-size: .8rem;
   line-height: .5rem;
-  color: ccc;
+  color: #ccc;
 }
 
 .box--update li:nth-child(4) a{
@@ -887,7 +886,6 @@ h3 {
   list-style-type: none;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 5px #e6e6e6;
   position: relative;
 }
 
@@ -973,7 +971,6 @@ h3 {
   list-style-type: none;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 5px #e6e6e6;
   position: relative;
 }
 
@@ -1031,7 +1028,7 @@ h3 {
   font-family: Roboto;
   font-size: .8rem;
   line-height: .5rem;
-  color: ccc;
+  color: #ccc;
 }
 
 .update--randall li:nth-child(4) a{
@@ -1076,7 +1073,6 @@ h3 {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 0 0;
-  box-shadow: 5px #e6e6e6;
   position: relative;
 }
 
@@ -1135,7 +1131,7 @@ h3 {
   font-family: Roboto;
   font-size: .8rem;
   line-height: .5rem;
-  color: ccc;
+  color: #ccc;
 }
 
 .update--israel li:nth-child(4) a{
