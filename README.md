@@ -1,6 +1,7 @@
 # fcnl_case_study
-About
-This is my final project for the Fall 2020 Web Development course at the Minneapolis College of Art and Design.  
+<p>About</p>
+
+<p>This is my final project for the Fall 2020 Web Development course at the Minneapolis College of Art and Design.</p>  
 
 <p><a href="fcnl_web_design_study.pdf">Initial Design Study</a> 
 </p>
